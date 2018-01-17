@@ -4,11 +4,14 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 import java.util.ArrayList;
 
 import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 /**
  * Created by student on 2018-01-17.
@@ -46,10 +49,24 @@ public class LekarzAdapter extends RecyclerView.Adapter<LekarzAdapter.ViewHolder
         TextView Nazwa;
         @BindView(R.id.Specjalizacja)
         TextView Specjalizacja;
+        @BindView(R.id.SelectBtn)
+        Button Selected;
 
+
+        @OnClick(R.id.SelectBtn)
+        void onNameClick(){
+            if(Selected.getText()=="Wybierz")
+            {
+            Selected.setText("Wybrano");
+            }
+            else
+            {
+              Selected.setText("Wybierz");
+            }}
 
         public ViewHolder(View itemView) {
             super(itemView);
+            ButterKnife.bind(this, itemView);
         }
 
         public void setNazwa(String nazwa) {
