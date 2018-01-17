@@ -62,7 +62,8 @@ public class LekarzAdapter extends RecyclerView.Adapter<LekarzAdapter.ViewHolder
             else
             {
               Selected.setText("Wybierz");
-            }}
+            }
+        }
 
         public ViewHolder(View itemView) {
             super(itemView);
