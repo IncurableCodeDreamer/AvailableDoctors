@@ -8,20 +8,21 @@ android:layout_height="wrap_content">
 <TextView
     android:id="@+id/Nazwa"
     android:layout_width="wrap_content"
-    android:layout_height="80dp"
-    android:layout_marginTop="20dp"
+    android:layout_height="85dp"
+    android:layout_marginTop="10dp"
     android:layout_marginLeft="10dp"
-    android:gravity="center_horizontal"
+    android:gravity="center"
     android:text="Dane"
     android:textColor="@color/colorAccent"
     android:textSize="20sp"
     android:textStyle="bold" />
 
-<TextView
+    <TextView
     android:id="@+id/Specjalizacja"
     android:layout_width="wrap_content"
-    android:layout_height="85dp"
-    android:layout_marginTop="10dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="62dp"
+    android:layout_marginBottom="10dp"
     android:layout_marginRight="10dp"
     android:layout_alignParentRight="true"
     android:layout_alignParentTop="true"
@@ -36,7 +37,6 @@ android:layout_height="wrap_content">
     android:layout_height="50dp"
     android:layout_alignParentRight="true"
     android:layout_below="@id/Specjalizacja"
-    android:layout_margin="5dp"
     android:background="@color/colorPrimary"
     android:text="Wybierz"
     android:textColor="@android:color/white"
