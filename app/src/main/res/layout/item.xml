@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+android:layout_height="wrap_content">
+
+
+<TextView
+    android:id="@+id/Nazwa"
+    android:layout_width="wrap_content"
+    android:layout_height="85dp"
+    android:layout_marginTop="10dp"
+    android:gravity="center_horizontal"
+    android:text="Dane"
+    android:textColor="@color/colorAccent"
+    android:textSize="25sp"
+    android:textStyle="bold" />
+
+<TextView
+    android:id="@+id/Specjalizacja"
+    android:layout_width="wrap_content"
+    android:layout_height="85dp"
+    android:layout_marginTop="10dp"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentTop="true"
+    android:gravity="center"
+    android:text="specjalizacja"
+    android:textColor="@color/colorAccent"
+    android:textSize="20sp" />
+
+<Button
+    android:id="@+id/SelectBtn"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_alignParentRight="true"
+    android:layout_below="@id/Specjalizacja"
+    android:layout_margin="5dp"
+    android:background="@color/colorPrimary"
+    android:text="Wybierz"
+    android:textColor="@android:color/white"
+    android:textSize="15dp" />
+</RelativeLayout>
